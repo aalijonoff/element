@@ -1,0 +1,43 @@
+.userProfileContainer {
+  display: grid;
+  /* background-color: red; */
+  width: 100%;
+  padding: 50px 0 0 0;
+}
+.profile {
+  display: grid;
+  background-color: green;
+  grid-template-columns: 30% auto;
+}
+.profilePicture{
+    display: grid;
+}
+.profilePicture img {
+  width: 180px;
+  height: 180px;
+  border-radius: 180px;
+  background: linear-gradient(
+      #ff0000,
+      #ff0000,
+      rgb(228, 44, 11),
+      rgba(255, 0, 0, 0.726),
+      orange,
+      orange
+    ),
+    linear-gradient(
+      to right,
+      rgb(255, 14, 14),
+      rgb(255, 65, 65),
+      rgb(255, 102, 0),
+      rgb(255, 0, 0)
+    );
+  background-origin: border-box;
+  background-repeat: no-repeat; /* this is important */
+  border: 5px solid transparent;
+  justify-content: center;
+  align-items: center;
+}
+
+.posts {
+  display: grid;
+}

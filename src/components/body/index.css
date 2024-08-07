@@ -1,0 +1,133 @@
+.bodyMainContainer {
+  display: grid;
+  grid-template-rows: 100px auto;
+  padding-top: 20px;
+  width: auto;
+  justify-content: center;
+}
+.storiesNavbar {
+  display: grid;
+  max-width: 700px;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  max-height: 50px;
+}
+.stories {
+  display: grid;
+  grid-template-rows: auto 5px;
+  font-size: small;
+  text-align: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.stories img {
+  width: 58px;
+  height: 58px;
+  border-radius: 58px;
+  background: linear-gradient(
+      #ff0000,
+      #ff0000,
+      rgb(228, 44, 11),
+      rgba(255, 0, 0, 0.726),
+      orange,
+      orange
+    ),
+    linear-gradient(
+      to right,
+      rgb(255, 14, 14),
+      rgb(255, 65, 65),
+      rgb(255, 102, 0),
+      rgb(255, 0, 0)
+    );
+  background-origin: border-box;
+  background-repeat: no-repeat; /* this is important */
+  border: 2px solid transparent;
+}
+
+.postsContainer {
+  display: grid;
+  justify-content: center;
+  gap: 10px;
+}
+.postBox {
+  display: grid;
+  width: 550px;
+  height: 720px;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 0 0 10px 0;
+   border-bottom: 1px solid grey;
+}
+.postsProfileBox {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  gap: 10px;
+  align-items: center;
+}
+.postProfile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background: linear-gradient(
+      #ff0000,
+      #ff0000,
+      rgb(228, 44, 11),
+      rgba(255, 0, 0, 0.726),
+      orange,
+      orange
+    ),
+    linear-gradient(
+      to right,
+      rgb(255, 14, 14),
+      rgb(255, 65, 65),
+      rgb(255, 102, 0),
+      rgb(255, 0, 0)
+    );
+  background-origin: border-box;
+  background-repeat: no-repeat; /* this is important */
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.postInfo {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+.userName {
+  font-size: small;
+  font-weight: 700;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  cursor: pointer;
+}
+.userName span {
+  font-weight: lighter;
+  cursor: pointer;
+}
+.audioBy {
+  font-size: x-small;
+  cursor: pointer;
+}
+.postReactions {
+  display: grid;
+  grid-template-columns: 30px 30px 30px;
+  gap: 5px;
+  height: 30px;
+  align-items: center;
+}
+.like:active{
+  color: red;
+}
+.postReactions svg {
+  cursor: pointer;
+}
+.byRelatives {
+  font-size: small;
+}
+.postText {
+  font-weight: bold;
+}
+.postText span {
+  font-weight: lighter;
+}

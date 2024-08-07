@@ -1,0 +1,106 @@
+.footerContainer {
+  display: grid;
+  height: 500px;
+  width: 300px;
+  grid-template-rows: 50px 300px;
+  padding-top: 40px;
+  padding-left: 50px;
+  gap: 20px;
+}
+.profileSwitch {
+  display: grid;
+  grid-template-columns: 70px auto auto;
+  align-items: center;
+}
+.profileImg img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+.profielNameBoxP {
+  align-items: center;
+}
+.switchButton {
+  color: #0095f6;
+  font-weight: bold;
+  font-size: small;
+  cursor: pointer;
+}
+.switchButton:hover {
+  color: #134680;
+}
+
+.suggestionsBox {
+  display: grid;
+  grid-template-rows: 50px auto;
+  padding-bottom: 200px;
+}
+
+.suggestionsTop {
+  display: grid;
+  width: 100%;
+  color: rgb(78, 78, 78);
+  gap: 50px;
+  align-items: center;
+  grid-template-columns: auto auto;
+  cursor: pointer;
+}
+
+.suggestionsTop span {
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+}
+.suggestionsTop span:hover {
+  color: grey;
+}
+.suggestedContainer {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  gap: 10px;
+}
+.suggestedBox {
+  display: grid;
+  grid-template-columns: 60px auto auto;
+  align-items: center;
+}
+.suggestedProfile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.suggestedUser {
+  display: grid;
+  grid-template-rows: auto auto;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: small;
+}
+.suggestedUser span {
+  font-weight: 400;
+  cursor: initial;
+  font-size: small;
+}
+
+.webPageInfo {
+  font-size: x-small;
+  color: grey;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.webPageInfo:hover {
+  color: rgb(41, 41, 41);
+  transition: 0.4s;
+}
+.webPageStatus {
+  color: grey;
+  font-size: x-small;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1160px) {
+  .footerContainer {
+    display: none;
+  }
+}
